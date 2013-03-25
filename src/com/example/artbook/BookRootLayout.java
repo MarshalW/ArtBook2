@@ -8,6 +8,7 @@ import android.graphics.Matrix;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Handler;
 import android.os.Looper;
+import android.os.Message;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -50,7 +51,6 @@ public class BookRootLayout extends FrameLayout implements CurlView.PageProvider
         super(context);
         initWebView();
         DisplayMetrics metrics = getResources().getDisplayMetrics();
-        Log.d("artbook","-------->>>>dip: "+metrics);
     }
 
     private void initWebView() {
@@ -113,7 +113,7 @@ public class BookRootLayout extends FrameLayout implements CurlView.PageProvider
 
     @Override
     public int getPageCount() {
-        return 11;
+        return 16;
     }
 
     @Override
